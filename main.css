@@ -1,0 +1,100 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000239;
+    color: #fff;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display {
+    width: 100%;
+    margin: 50px 0 0 10px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container #password-h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(10, 207, 10);
+    border-bottom: 4px solid rgb(24, 105, 24);
+    padding-bottom: 5px;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+.container #generate {
+    margin: 20px 0 0 1rem;
+    padding: 16px 26px;
+    border: 0;
+    outline: 0;
+    background: rgb(10, 207, 10);
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container #generate button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+}
+
+.container #generate span {
+    color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 5%;
+    }
+
+    .display {
+        width: 95%;
+        justify-content: space-around;
+        padding: 18px;
+        margin: 30px 10px 0 10px;
+    }
+
+    .container #generate {
+        margin: 20px 10px 0 10px;
+        padding: 14px 20px;
+        font-size: 18px;
+    }
+
+    .display input {
+        font-size: 16px;
+    }
+}
